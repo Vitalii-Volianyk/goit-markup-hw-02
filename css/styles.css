@@ -138,9 +138,11 @@ body{
 
 
 /* hw-4 */
-
+/*
 .header .list, .section .list, .header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+*/
