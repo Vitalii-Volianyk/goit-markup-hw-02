@@ -1,8 +1,8 @@
 :root{
     --accent-color:#2196F3;
     --accent-hover:#188CE8;
-    --black-color:#000000;
-    --white-color:#ffffff;
+    --dark-font:#000000;
+    --light-font:#ffffff;
     --font-color:#212121;
     --contact-color:#757575;
     --bg-color:#2F303A;
@@ -33,21 +33,28 @@ body{
 }
 
 .logo{
+    font-family: 'Raleway', sans-serif;;
     font-weight: 700;
     font-size: 26px;
     color: var(--accent-color);
     letter-spacing: calc(26px*0.03);
 }
 .header .sub-logo{
-    color: var(--black-color);
+    color: var(--dark-font);
 }
 
 /* Studio main styles */
 .hero{
     background-color: var(--bg-color);
-    color: var(--white-color);
+    color: var(--light-font);
+}
+.section .heading{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42.19/36);
 }
 .hero .heading{
+    text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     letter-spacing: calc(44px*0.06);
@@ -63,6 +70,7 @@ body{
 .button{
     border: none;
     font-size: 16px;
+    font-family: inherit;
 }
 .button:hover{
     background-color:var(--accent-hover);
@@ -72,37 +80,35 @@ body{
     text-align: center;
     letter-spacing: calc(36px*0.03);
 }
-.section .heading{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42.19/36);
-}
 .title{
+    text-transform: uppercase;
     font-size: inherit;
     line-height: calc(16.41/14);
 }
 .description{
     line-height: calc(24/14);
+    color: var(--contact-color);
 }
-.worker-name, .profesion{
+.worker-name, .profession{
     font-size: 16px;
     line-height: calc(18.75/16);
     font-weight: 500;
 }
-.profesion{
+.profession{
     font-weight: 400;
+    color: var(--contact-color);
 }
 
 /* Portfolio main styles */
 .filters .button{
-    background-color: var(--white-color);
+    background-color: var(--light-font);
     font-weight: 500;
     line-height: calc(26/16);
     border-radius: 5px;
 }
 .filters .button:hover, .filters .active{
     background-color: var(--accent-color);
-    color: var(--white-color);
+    color: var(--light-font);
 }
 .project-name{
     font-size: 18px;
@@ -112,15 +118,16 @@ body{
 .project-type{
     font-size: 16px;
     line-height: calc(30/16);
+    color: var(--contact-color);
 }
 /* Footer styles */
 .footer{
     background-color: var(--bg-color);
 }
 .footer .sub-logo, .address-info{
-    color: var(--white-color);
+    color: var(--light-font);
 }
-.adders-info{
+.address-info{
     font-style: normal;
 }
 .footer .contact-link{
